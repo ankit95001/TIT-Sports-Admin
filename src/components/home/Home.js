@@ -32,6 +32,7 @@ const Home = (props) => {
           <img src="/ch.jpeg" alt="Sport 6" />
           <img src="/cj.jpeg" alt="Sport 7" />
           <img src="/ck.jpeg" alt="Sport 8" />
+          <img src="/yy.jpg" alt="Sport 9" />
         </div>
       </section>
     </div>
