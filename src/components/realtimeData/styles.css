@@ -1,0 +1,61 @@
+/* Dark Mode and Light Mode Styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .light-mode {
+    background-color: #f9f9f9;
+    color: #000;
+  }
+  
+  /* Animate card appearance */
+  .animate-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .animate-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Form input for search */
+  form input {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .realtime-data-container {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-bottom: 50px;
+  }
+  
+  .realtime-data-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .realtime-data-container::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+  .realtime-data-container {
+    max-height: 80vh;  /* Limit the height of the container for scroll */
+    overflow-y: auto;  /* Enable vertical scroll for the table */
+    padding-top: 20px;
+  }
+  
+  .sticky-search {
+    position: sticky;
+    top: 0;
+    z-index: 1000;  /* Ensure it stays on top of the table */
+    background-color: white;  /* Background color to match the page */
+    padding: 10px ;  /* Add some padding */
+    border-bottom: 1px solid #ccc;  /* Optional: Separate visually from the table */
+  }
+  
+  

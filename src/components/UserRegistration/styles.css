@@ -1,0 +1,57 @@
+/* General layout styling */
+.realtime-data-container {
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Dropdown styling */
+  .sport-select {
+    font-size: 1.1rem;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Animation on dropdown hover */
+  .sport-select:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Table animation */
+  .animate-table {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Button styling */
+  .btn-doc {
+    transition: all 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .btn-doc:hover {
+    background-color: #007bff;
+    border-color: #0056b3;
+    transform: scale(1.05); /* Slight scale up on hover */
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .realtime-data-container {
+      padding: 20px;
+    }
+  }
+  

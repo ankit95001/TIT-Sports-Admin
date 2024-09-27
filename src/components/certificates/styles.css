@@ -1,0 +1,117 @@
+/* General layout styling */
+.realtime-data-container {
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Dropdown styling */
+.sport-select {
+  font-size: 1.1rem;
+  padding: 10px;
+  width: 1000px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid #ced4da;
+}
+
+
+/* Animation on dropdown hover */
+.sport-select:hover {
+  background-color: #e9ecef;
+}
+
+/* Card container styling */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Card image styling */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Rounded corners on top */
+}
+
+/* Card body styling */
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Card text styling */
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Card animation */
+.card {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Button styling */
+.btn-doc {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-doc:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scale up on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .realtime-data-container {
+      padding: 15px;
+  }
+
+  .card-body {
+      padding: 10px;
+  }
+
+  .card-title {
+      font-size: 1.1rem;
+  }
+
+  .card-text {
+      font-size: 0.9rem;
+  }
+}

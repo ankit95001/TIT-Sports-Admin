@@ -1,0 +1,120 @@
+/* General container styles */
+.home-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #192B53; /* Main background color */
+    color: white;
+  }
+  
+  .header-section {
+    background-color: #192B53;
+    color: white;
+    padding: 30px;
+    border-bottom: 2px solid white;
+  }
+  
+  .header-section h1 {
+    font-size: 36px;
+    margin: 0;
+    color: white;
+  }
+  
+  .header-section p {
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  /* Officer section styling */
+  .officer-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .officer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+  }
+  
+  .officer-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #192B53;
+    object-fit: cover; /* Ensures photo looks good */
+  }
+  
+  .officer-info h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #192B53;
+  }
+  
+  /* Gallery section styling */
+  .photos-section {
+    margin-top: 50px;
+  }
+  
+  .photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 10fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .photos-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid white;
+    object-fit: cover; /* Keeps the images clear and proportional */
+  }
+  
+  /* Responsive media queries */
+  @media (max-width: 768px) {
+    .officer-details {
+      max-width: 90%;
+    }
+  
+    .officer-photo {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .header-section h1 {
+      font-size: 28px;
+    }
+  
+    .header-section p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .photos-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    .officer-photo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .header-section h1 {
+      font-size: 24px;
+    }
+  
+    .header-section p {
+      font-size: 14px;
+    }
+  }
+  
